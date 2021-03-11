@@ -30,8 +30,13 @@
         margin: 0px;
         font-family: "Kumbh Sans", cursive;
         font-size: 18px;
-        background-image: url(images/bg-pattern-top.svg);
+        /* background-image: url(images/bg-pattern-bottom.svg); */
+        background-image: url(images/bg-pattern-top.svg),
+          url(images/bg-pattern-bottom.svg);
+        background-repeat: no-repeat;
+        background-position: bottom 40vh right 48vw, top 50vh left 48vw;
         font-weight: 400;
+        color: hsl(0, 0%, 59%);
       }
       .grid-container {
         display: grid;
@@ -50,7 +55,7 @@
         border-radius: 10px;
       }
       hr {
-        border: 0.1px solid hsl(227, 10%, 46%);
+        border: 0.1px solid hsl(0, 0%, 59%);
         padding: 0;
       }
       .container {
@@ -104,7 +109,8 @@
         <img src="images/image-victor.jpg" alt="avatar" class="avatar" />
       </div>
       <div class="container" id="cardMiddlePart">
-        <span style="font-weight: 700">Victor Crest</span>
+        <span style="font-weight: 700"><span style="font-weight: 700; color: hsl(229, 23%, 23%)">
+          Victor Crest</span>
         26<br />
         London
       </div>
@@ -112,9 +118,23 @@
       <div class="container">
         <table>
           <tr>
-            <td><span style="font-weight: 700">80K </span><br />Followers</td>
-            <td><span style="font-weight: 700">803K</span> <br />Likes</td>
-            <td><span style="font-weight: 700">1.4K</span> <br />Photos</td>
+            <td>
+              <span style="font-weight: 700; color: hsl(229, 23%, 23%)"
+                >80K </span
+              ><br />Followers
+            </td>
+            <td>
+              <span style="font-weight: 700; color: hsl(229, 23%, 23%)"
+                >803K</span
+              >
+              <br />Likes
+            </td>
+            <td>
+              <span style="font-weight: 700; color: hsl(229, 23%, 23%)"
+                >1.4K</span
+              >
+              <br />Photos
+            </td>
           </tr>
         </table>
       </div>
