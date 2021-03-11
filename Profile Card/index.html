@@ -11,10 +11,13 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans"
+    />
 
     <title>Frontend Mentor | Profile card component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -26,18 +29,85 @@
       body {
         background-color: hsl(185, 75%, 39%);
         margin: 0px;
+        font-family: "Kumbh Sans", cursive;
+        font-size: 18px;
+        background-image: url(images/bg-pattern-top.svg);
+        font-weight: 400;
       }
       .grid-container {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
       }
       .grid-item {
         margin: 0px;
       }
+      .cardElement {
+        margin: auto;
+        width: 290px;
+        height: 340px;
+        background-color: white;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        border-radius: 10px;
+      }
+      hr {
+        border: 0.1px solid hsl(227, 10%, 46%);
+        padding: 0;
+      }
+      .container {
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+      }
+      table {
+        /* border: 1px solid black; */
+        margin-left: 9px;
+        margin-right: 9px;
+      }
+      td,
+      tr {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+      }
+      #cardTopBackground {
+        background-image: url(images/bg-pattern-card.svg);
+        height: 80px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      #cardMiddlePart {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .avatarContainer {
+        /* position: absolute; */
+        /* width: 70px;
+        height: 70px; */
+        display: block;
+        margin-left: 35%;
+        margin-right: 35%;
+        margin-top: -50px;
+      }
+      .avatar {
+        width: 100%;
+        border: 4px solid white;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+      }
+      /* .avatar img {
+        width: 65px;
+        height: 65px;
+      } */
     </style>
   </head>
   <body>
-    <div class="grid-container">
+    <!-- <div class="grid-container">
       <div class="grid-item">
         <svg viewBox="0 300 600 600">
           <image
@@ -48,8 +118,29 @@
             height="100%"
           ></image>
         </svg>
+      </div> -->
+    <div class="cardElement">
+      <div class="container" id="cardTopBackground"></div>
+      <div class="avatarContainer">
+        <img src="images/image-victor.jpg" alt="avatar" class="avatar" />
       </div>
-      <div class="grid-item">
+      <div class="container" id="cardMiddlePart">
+        <span style="font-weight: 700">Victor Crest</span>
+        26<br />
+        London
+      </div>
+      <hr />
+      <div class="container">
+        <table>
+          <tr>
+            <td><span style="font-weight: 700">80K </span><br />Followers</td>
+            <td><span style="font-weight: 700">803K</span> <br />Likes</td>
+            <td><span style="font-weight: 700">1.4K</span> <br />Photos</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- <div class="grid-item">
         <svg viewBox="-120 -360 800 800">
           <image
             href="images\bg-pattern-bottom.svg"
@@ -59,8 +150,8 @@
             height="110%"
           ></image>
         </svg>
-      </div>
-    </div>
+      </div> -->
+    <!-- </div> -->
 
     <!-- Victor Crest 26 London 80K Followers 803K Likes 1.4K Photos
     <div class="attribution">
